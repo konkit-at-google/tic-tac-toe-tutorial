@@ -1,0 +1,41 @@
+/* || GENERAL STYLES */
+button {
+    background-color: dodgerblue; /* Blue background */
+    color: white;
+    padding: 14px 28px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: navy; /* Navy button background on hover */
+  }
+
+  /* || SPECIFIC ELEMENTS STYLES */
+  .board-frame {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+    margin: 20px;
+    width: max-content;
+  }
+
+  .reset-button {
+    background-color: white;
+    color: #d9534f; /* Dark red text color */
+    border: 1px solid #d9534f; /* Dark red border color */
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .reset-button:hover {
+    background-color: #d9534f; /* Dark red background on hover */
+    color: #fff; /* White text on hover */
+  }
