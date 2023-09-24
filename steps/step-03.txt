@@ -1,0 +1,35 @@
+/**
+
+Step #3
+
+Till now our button only shows "X"! We need also to show "O".
+
+1. Open script.js.
+2. After each click we need to change "X" to "O",
+then "O" to "X".
+3. Look at our function. Let's add toggleSign() function,
+so each time the button is clicked, the current 
+sign is flipped. Write: 
+
+/** Start of code block */
+function setField(i) {
+    <...>
+    toggleSign()
+}
+/** End of code block */
+
+4. And now let's define a function below:
+
+/** Start of code block */
+function toggleSign() {
+  if (sign /** write here your condition */) {
+    /** write code to change sign */
+  } else {
+    /** write code to change sign back */
+  }
+}
+/** End of code block */
+
+5. Try it!
+
+*/

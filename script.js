@@ -69,7 +69,7 @@ function checkIfFinished(sign) {
     return true
   }
   
-    if (getValue(2) == sign && getValue(4) == sign && getValue(6) == sign) {
+  if (getValue(2) == sign && getValue(4) == sign && getValue(6) == sign) {
     return true
   }
   

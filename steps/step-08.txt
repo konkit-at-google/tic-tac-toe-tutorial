@@ -1,0 +1,19 @@
+/** 
+
+Let's make our board nicer looking by adding some style!
+[Optional]
+
+Step #8
+
+1. Open index.html
+2. Find previousely defined `<head>` section and
+add a connection to styles inside tag:
+
+<link rel="stylesheet" type="text/css" href="./styles.css">
+
+3. Create new file styles.css, copy paste there our styles
+<add link to file>.
+
+4. Try it in browser!
+
+*/
