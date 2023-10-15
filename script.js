@@ -41,6 +41,21 @@ function setField(i) {
 }
 
 function checkIfFinished(sign) {
+  /*
+    The looks like this:
+    0 | 1 | 2
+    ---------
+    3 | 4 | 5
+    ---------
+    6 | 7 | 8
+
+    One winning position:
+    X | X | X
+    ---------
+    . | . | .
+    ---------
+    . | . | .
+  */
 	if (getValue(0) == sign && getValue(1) == sign && getValue(2) == sign) {
     return true
   }
