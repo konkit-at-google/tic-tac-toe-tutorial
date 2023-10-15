@@ -42,7 +42,7 @@ function setField(i) {
 
 function checkIfFinished(sign) {
   /*
-    The looks like this:
+    The board looks like this:
     0 | 1 | 2
     ---------
     3 | 4 | 5
