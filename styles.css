@@ -1,38 +1,44 @@
 /* || GENERAL STYLES */
 button {
-    background-color: dodgerblue; /* Blue background */
+    background-color:  #61ceb2; /* Green background */
     color: white;
-    padding: 14px 28px;
-    margin: 3px;
+    padding: 22px 28px;
+    margin-left: 1px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 3px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-family: monospace;
     text-align: center;
     transition: background-color 0.3s ease;
   }
   
   button:hover {
-    background-color: navy; /* Navy button background on hover */
+    background-color: #44b196; /* Darker green background on hover */
   }
 
   /* || SPECIFIC ELEMENTS STYLES */
   .board-frame {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #2196F3;
-    border-radius: 5px;
-    margin: 20px;
+    background-color:  #61ceb2;
+    padding: 40px;
+    margin: 40px;
+    width: max-content;
+  }
+
+  .board-field {
+    background-color:  #67aa99;
     width: max-content;
   }
 
   .reset-button {
-    background-color: white;
-    color: #d9534f; /* Dark red text color */
-    border: 1px solid #d9534f; /* Dark red border color */
+    background-color: #61ceb2;
+    color: #710101; /* Dark red text color */
+    border: 1px solid #710101; /* Dark red border color */
+    border-radius: 5px;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .reset-button:hover {
