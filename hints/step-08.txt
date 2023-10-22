@@ -6,9 +6,9 @@ Let's define the rest of them.
 Step #8
 
 1. Open script.js
-2. Find function checkIfFinished(sign).
+2. Find function checkIfFinished(sign). 
   We have a win detection defined like this:
-
+  
   /** Start of code block */
   /*
     The board looks like this:
@@ -48,6 +48,35 @@ Step #8
   */
   Could you write the other if conditions for every possible
   position?
+  The result may look like this:
+
+  if (getValue(3) == sign && getValue(4) == sign && getValue(5) == sign) {
+    return true;
+  }
+  
+  if (getValue(6) == sign && getValue(7) == sign && getValue(8) == sign) {
+    return true;
+  }
+  
+  if (getValue(0) == sign && getValue(3) == sign && getValue(6) == sign) {
+    return true;
+  }
+  
+  if (getValue(1) == sign && getValue(4) == sign && getValue(7) == sign) {
+    return true;
+  }
+  
+  if (getValue(2) == sign && getValue(5) == sign && getValue(8) == sign) {
+    return true;
+  }
+  
+  if (getValue(0) == sign && getValue(4) == sign && getValue(8) == sign) {
+    return true;
+  }
+  
+  if (getValue(2) == sign && getValue(4) == sign && getValue(6) == sign) {
+    return true
+  }
 
 4. Try it in browser!
 

@@ -17,7 +17,7 @@ Add condition check into the function:
 
             hasWon = checkIfFinished(sign);
             if (hasWon) {
-                alert(/* Your message here */);
+                alert(sign + " has won");
                 return;
             } 
             
@@ -59,9 +59,7 @@ function `checkIfFinished`:
         if (getValue(0) == sign && getValue(1) == sign && getValue(2) == sign) {
             return true
         }
-        
-        /** write other possible conditions of game finish */
-        
+                
         return false
     }
     /** End of code block */

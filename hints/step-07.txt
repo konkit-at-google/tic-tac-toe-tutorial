@@ -1,0 +1,42 @@
+/** 
+
+Step #7
+
+But our game is never stopped! We need to forbid clicking
+once somebody has won.
+
+1. Open script.js
+2. Find a section with "Global variables".
+3. Let's add a variable named `gameFinished`,
+set it to initial value.
+4. Find our function `setField`. We need to add:
+    - set `gameFinished = true;` when we know somebody won;
+    - add new condition to `if`, so that if game is finished
+    we do not execute the logic.
+
+
+The result may look like this:
+    function setField(i) {
+    if (!gameFinished && notSet(i)) {
+        buttons[i].innerHTML = sign;
+        
+        hasWon = checkIfFinished(sign);
+        if (hasWon) {
+            alert(sign + " has won");
+            gameFinished = true;
+            return;
+        } 
+        
+        isDraw = checkDraw();
+        if (isDraw) {
+            alert("Draw");
+            gameFinished = true;
+            return;
+        } 
+        
+        toggleSign();
+    }
+    }
+
+
+*/
