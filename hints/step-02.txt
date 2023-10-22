@@ -1,0 +1,71 @@
+/**
+
+Step #2
+
+1. Open file index.html
+2. Between tags "<html>" and "<body>" add section "<head>".
+This sction will define, how our simple page will optain 
+its logic and its beauty. First, we will add logic, 
+"brain" of our page.
+
+    <!-- Start of html block -->
+    <head>
+    <script src="./script.js" defer></script>
+    </head>
+    <!-- End of html block -->
+
+3. Create new file named script.js
+4. How to get access to all the buttons in a page?
+   Add our helpers:
+
+    /** Start of code block */
+    /** Global variables */
+    sign = "X";
+    buttons = document.querySelectorAll("button");
+    /** End of code block */
+
+5. Add function, that will change our button to "X"!
+
+    /** Start of code block */
+    function setField(i) {
+        buttons[i].innerHTML = sign
+    }
+    /** End of code block */
+
+6. Let's connect now our function to a button.
+So, open index.html and to each button we have add 
+action, our function:
+    onclick="setField(0)"
+
+It should look like this:
+
+    <div class="board-field">
+      <div>
+        <button onclick="setField(0)">0</button>
+        <button onclick="setField(1)">1</button>
+        <button onclick="setField(2)">2</button>
+      </div>
+
+      <div>
+        <button onclick="setField(3)">3</button>
+        <button onclick="setField(4)">4</button>
+        <button onclick="setField(5)">5</button>
+      </div>
+
+      <div>
+        <button onclick="setField(6)">6</button>
+        <button onclick="setField(7)">7</button>
+        <button onclick="setField(8)">8</button>
+      </div>
+    </div>
+
+Each button should have its own value in setField:
+    setField(0)
+    setField(1), and so on.
+
+Hoorray! Now we have our body and brain connected!
+
+7. Try it! Open in browser again or 
+find previous tab and press "Ctrl-R".
+
+*/

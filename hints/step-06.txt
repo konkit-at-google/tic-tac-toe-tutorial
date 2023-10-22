@@ -1,0 +1,69 @@
+/** 
+
+Step #6
+
+Now we need to define the end of the game:
+when there "X"s or "O"s form three in a row.
+
+1. Open script.js
+2. Let's add a condition inside our `setField` to check if
+the game is not finished by our last move. Find `setField`.
+Add condition check into the function:
+
+    /** Start of code block */
+    function setField(i) {
+        if (notSet(i)) {
+            buttons[i].innerHTML = sign;
+
+            hasWon = checkIfFinished(sign);
+            if (hasWon) {
+                alert(sign + " has won");
+                return;
+            } 
+            
+            toggleSign();
+        }
+    }
+    /** End of code block */
+
+3. First let's add a helper function at the end of the file:
+    
+    /** Start of code block */
+    function getValue(i) {
+        return buttons[i].innerHTML
+    }
+    /** End of code block */
+
+    Read, what it does?
+
+4. Now go to the end of file and create our 
+function `checkIfFinished`:
+
+    /** Start of code block */
+    function checkIfFinished(sign) {
+          /*
+            The board looks like this:
+            0 | 1 | 2
+            ---------
+            3 | 4 | 5
+            ---------
+            6 | 7 | 8
+
+            One winning position:
+            X | X | X
+            ---------
+            . | . | .
+            ---------
+            . | . | .
+        */
+        if (getValue(0) == sign && getValue(1) == sign && getValue(2) == sign) {
+            return true
+        }
+                
+        return false
+    }
+    /** End of code block */
+
+5. Try it!
+
+*/

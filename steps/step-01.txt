@@ -1,0 +1,26 @@
+/** 
+Let's start creating our Tic Tac Toe game!
+
+Step #1
+
+1. Create file index.html
+2. Open file and put following text inside:
+this will be our main document.
+
+  <html>
+  <body>
+    <div class="board-frame">
+      <div>
+        <button>0</button>
+        <!-- Add 2 more buttons, replacing "0" with "1", "2"-->
+      </div>
+
+      <!-- Add two more "div"s and 3 buttons inside with "3"... up to "8" -->
+
+    </div>
+  </body>
+  </html>
+
+3. Open a page in browser: double-click on the index.html file.
+
+*/

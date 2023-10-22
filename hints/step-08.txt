@@ -1,0 +1,83 @@
+/** 
+
+Till now we used only first row to detect a win.
+Let's define the rest of them.
+
+Step #8
+
+1. Open script.js
+2. Find function checkIfFinished(sign). 
+  We have a win detection defined like this:
+  
+  /** Start of code block */
+  /*
+    The board looks like this:
+    0 | 1 | 2
+    ---------
+    3 | 4 | 5
+    ---------
+    6 | 7 | 8
+
+    One winning position:
+    X | X | X
+    ---------
+    . | . | .
+    ---------
+    . | . | .
+  */
+	if (getValue(0) == sign && getValue(1) == sign && getValue(2) == sign) {
+    return true;
+  }
+  /** End of code block */
+
+3. But there are more! By the way, how many? For example:
+  /*
+    The board looks like this:
+    0 | 1 | 2
+    ---------
+    3 | 4 | 5
+    ---------
+    6 | 7 | 8
+
+    One winning position:
+    . | . | X
+    ---------
+    . | X | .
+    ---------
+    X | . | .
+  */
+  Could you write the other if conditions for every possible
+  position?
+  The result may look like this:
+
+  if (getValue(3) == sign && getValue(4) == sign && getValue(5) == sign) {
+    return true;
+  }
+  
+  if (getValue(6) == sign && getValue(7) == sign && getValue(8) == sign) {
+    return true;
+  }
+  
+  if (getValue(0) == sign && getValue(3) == sign && getValue(6) == sign) {
+    return true;
+  }
+  
+  if (getValue(1) == sign && getValue(4) == sign && getValue(7) == sign) {
+    return true;
+  }
+  
+  if (getValue(2) == sign && getValue(5) == sign && getValue(8) == sign) {
+    return true;
+  }
+  
+  if (getValue(0) == sign && getValue(4) == sign && getValue(8) == sign) {
+    return true;
+  }
+  
+  if (getValue(2) == sign && getValue(4) == sign && getValue(6) == sign) {
+    return true
+  }
+
+4. Try it in browser!
+
+*/

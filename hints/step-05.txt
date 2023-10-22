@@ -1,0 +1,35 @@
+/**
+
+Step #5
+
+Now our game is played only once. Let's make it playable 
+many times. Let's add "Reset" button.
+
+1. Open index.html
+2. Add a new button inside its "div" after all our buttons:
+    
+    <!-- Start of html block -->
+    <div>
+      <button onclick="reset()">
+        Reset
+      </button>
+    </div>
+    <!-- End of html block -->
+3. As you see, we already defined a function to call
+on click: reset(). Let's define it's body.
+
+4. Open now script.js.
+
+5. At the end of the file add new function:
+
+    /** Start of code block */
+    function reset() {
+      for (i=0; i<9; i++) {
+        buttons[i].innerHTML = i;
+      }
+      gameFinished = false;
+      sign = "X";
+    }
+    /** End of code block */
+
+*/

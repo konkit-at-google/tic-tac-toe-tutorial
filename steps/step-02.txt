@@ -1,0 +1,53 @@
+/**
+
+Step #2
+
+1. Open file index.html
+2. Between tags "<html>" and "<body>" add section "<head>".
+This sction will define, how our simple page will optain 
+its logic and its beauty. First, we will add logic, 
+"brain" of our page.
+
+    <!-- Start of html block -->
+    <head>
+    <script src="./script.js" defer></script>
+    </head>
+    <!-- End of html block -->
+
+3. Create new file named script.js
+4. How to get access to all the buttons in a page?
+   Add our helpers:
+
+    /** Start of code block */
+    /** Global variables */
+    sign = "X";
+    buttons = document.querySelectorAll("button");
+    /** End of code block */
+
+5. Add function, that will change our button to "X"!
+
+    /** Start of code block */
+    function setField(i) {
+        buttons[i].innerHTML = sign
+    }
+    /** End of code block */
+
+6. Let's connect now our function to a button.
+So, open index.html and to each button we have add 
+action, our function:
+    onclick="setField(0)"
+
+It should look like this:
+
+    <button onclick="setField(0)">0</button>
+
+Each button should have its own value in setField:
+    setField(0)
+    setField(1), and so on.
+
+Hoorray! Now we have our body and brain connected!
+
+7. Try it! Open in browser again or 
+find previous tab and press "Ctrl-R".
+
+*/

@@ -1,0 +1,39 @@
+/** 
+
+There is also an end of a game when nobody wins, a draw!
+
+Step #9
+
+1. Open script.js
+2. Find previousely defined function setField(i).
+   Let's add another condition check, if all fields 
+    
+    /** Start of code block */
+    isDraw = checkDraw();
+    if (isDraw) {
+        alert(/** Write your alert message here */);
+        gameFinished = true;
+        return;
+    } 
+    /** End of code block */
+
+3. Now write a function checkDraw, use cycle like:
+    for (i=0; i<9; i++) {
+        // ... 
+    }
+
+    It should look like this:
+    /** Start of code block */
+    function checkDraw() {
+      for (/** Write a cycle condition to iterate the buttons */) {
+        if (/** Write a condition to check using helpers */) {
+          return false;
+        }
+      }
+      return true;
+    }
+    /** End of code block */
+
+4. Try it in browser!
+
+*/
